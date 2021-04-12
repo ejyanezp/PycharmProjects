@@ -1,0 +1,28 @@
+{
+  "claveTransactions": [
+    {
+      "requestDescription": "COMPRA POS",
+      "transactionCode": 525,
+      "timestamp": 1512223898000,
+      "accountNumber": 4021250522,
+      "transactionAmount": 103.94,
+      "terminalNumber": 79569,
+      "cardNumber": 5896580760497002,
+      "messageType": "TR",
+      "resultCode": 0,
+      "terminalDescription": "SUPER 99 VILLA ZAITA (CLAVE)>VILLA ZAIPA"
+    },
+    {
+      "requestDescription": "RETIRO ATM",
+      "transactionCode": 520,
+      "timestamp": 1512202860000,
+      "accountNumber": 4021250522,
+      "transactionAmount": 350,
+      "terminalNumber": 9602,
+      "cardNumber": 5896580760497002,
+      "messageType": "TR",
+      "resultCode": 0,
+      "terminalDescription": "BANCO NACIONAL DE PANAMA>BNPANAMA*SUC.PA"
+    }
+  ]
+}

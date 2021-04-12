@@ -1,0 +1,83 @@
+jQuery(window).on('load', function () {
+    
+	/* ------------------------------------------------------------------
+
+	 BLOG ISOTOPE MASONRY
+
+	 ------------------------------------------------------------------ */
+	jQuery('#blog-isotope-masonry').isotope({
+		itemSelector: 'article'
+	});
+
+});
+
+jQuery(document).ready(function () {
+
+	/* ------------------------------------------------------------------
+
+	 CONTACT FORM
+
+	 ------------------------------------------------------------------ */
+	jQuery("#ajax-contact-form").on("submit", function () {
+		var str = jQuery(this).serialize();
+                
+		jQuery.ajax({
+			type: "post",
+			url: techieblog.ajax_url,
+			data: str,
+			success: function (msg) {
+				// Message Sent
+				if (msg == 'OK') {
+					result = '<div class="alert alert-success">' + techieblog.contact_success_message + '</div>';
+					//option to hide the form fields after sending
+					jQuery("#ajax-contact-form").hide();
+				} else {
+					result = msg;
+				}
+                                
+				jQuery('#note').html(result);
+			}
+		});
+                
+		return false;
+	});
+
+	/* ------------------------------------------------------------------
+
+	 MAIN NAV
+
+	 ------------------------------------------------------------------ */
+	jQuery("#nav-toggle").on("click", function (e) {
+                // add active class
+                jQuery(this).toggleClass("active");
+                
+                // pull down the menu
+                jQuery('.pull').slideToggle();
+                
+                
+		e.preventDefault();
+		return false;
+	});
+        
+	/* ------------------------------------------------------------------
+
+	 SMOOTH SCROLL
+
+	 ------------------------------------------------------------------ */
+	jQuery('a[href*=#]:not([href=#])').on("click", function () {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname && this.hash !== '#respond') {
+			var target = jQuery(this.hash);
+
+			target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+
+			if (target.length) {
+				jQuery('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+                                
+				return false;
+			}
+		}
+	});
+
+});

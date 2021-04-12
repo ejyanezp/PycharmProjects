@@ -1,0 +1,3 @@
+Esta carpeta tiene un ejemplo de expresiones regulares reconociendo fragmentos de código Java.
+
+También se muestra como imprimir logs de forma profesional en Python.

@@ -1,0 +1,40 @@
+2021-02-05 23:07:46,896 INFO     [parser.py:49]: Started
+2021-02-05 23:07:46,896 INFO     [parser.py:14]: Status 0
+2021-02-05 23:07:46,897 INFO     [parser.py:27]: Status 1
+2021-02-05 23:07:46,897 INFO     [parser.py:36]: Status 2
+2021-02-05 23:07:46,898 INFO     [parser.py:51]: Finished
+2021-02-05 23:08:17,227 INFO     [parser.py:49]: Started
+2021-02-05 23:08:17,227 INFO     [parser.py:14]: Status 0
+2021-02-05 23:08:17,228 INFO     [parser.py:27]: Status 1
+2021-02-05 23:08:17,228 INFO     [parser.py:36]: Status 2
+2021-02-05 23:08:17,229 INFO     [parser.py:51]: Finished
+2021-02-05 23:08:19,758 INFO     [parser.py:49]: Started
+2021-02-05 23:08:19,758 INFO     [parser.py:14]: Status 0
+2021-02-05 23:08:19,759 INFO     [parser.py:27]: Status 1
+2021-02-05 23:08:19,763 INFO     [parser.py:36]: Status 2
+2021-02-05 23:08:19,764 INFO     [parser.py:51]: Finished
+2021-02-05 23:08:28,229 INFO     [parser.py:49]: Started
+2021-02-05 23:08:28,229 INFO     [parser.py:14]: Status 0
+2021-02-05 23:08:28,229 INFO     [parser.py:27]: Status 1
+2021-02-05 23:08:28,230 INFO     [parser.py:36]: Status 2
+2021-02-05 23:08:28,230 INFO     [parser.py:51]: Finished
+2021-02-05 23:08:29,479 INFO     [parser.py:49]: Started
+2021-02-05 23:08:29,480 INFO     [parser.py:14]: Status 0
+2021-02-05 23:08:29,480 INFO     [parser.py:27]: Status 1
+2021-02-05 23:08:29,480 INFO     [parser.py:36]: Status 2
+2021-02-05 23:08:29,481 INFO     [parser.py:51]: Finished
+2021-02-05 23:11:28,320 INFO     [parser.py:49]: Started
+2021-02-05 23:11:28,320 INFO     [parser.py:14]: Status 0
+2021-02-05 23:11:28,320 INFO     [parser.py:27]: Status 1
+2021-02-05 23:11:28,321 INFO     [parser.py:36]: Status 2
+2021-02-05 23:11:28,321 INFO     [parser.py:51]: Finished
+2021-02-05 23:11:30,852 INFO     [parser.py:49]: Started
+2021-02-05 23:11:30,852 INFO     [parser.py:14]: Status 0
+2021-02-05 23:11:30,852 INFO     [parser.py:27]: Status 1
+2021-02-05 23:11:30,853 INFO     [parser.py:36]: Status 2
+2021-02-05 23:11:30,853 INFO     [parser.py:51]: Finished
+2021-02-06 22:39:18,108 INFO     [parser.py:50]: Started
+2021-02-06 22:39:18,117 INFO     [parser.py:15]: Status 0
+2021-02-06 22:39:18,117 INFO     [parser.py:28]: Status 1
+2021-02-06 22:39:18,118 INFO     [parser.py:37]: Status 2
+2021-02-06 22:39:18,118 INFO     [parser.py:52]: Finished
