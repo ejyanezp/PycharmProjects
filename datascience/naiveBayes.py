@@ -1,6 +1,6 @@
 import os
 import io
-import numpy
+# import numpy
 from pandas import DataFrame
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
@@ -33,7 +33,23 @@ def dataFrameFromDirectory(path, classification):
 
     return DataFrame(rows, index=index)
 
+
 data = DataFrame({'message': [], 'class': []})
 
-data = data.append(dataFrameFromDirectory('emails/spam', 'spam'))
-data = data.append(dataFrameFromDirectory('emails/ham', 'ham'))
+data = data.append(dataFrameFromDirectory('C:\\Users\\Eduardo\\Dropbox\\MachineLearning\\MLCourse\\emails\\spam', 'spam'))
+data = data.append(dataFrameFromDirectory('C:\\Users\\Eduardo\\Dropbox\\MachineLearning\\MLCourse\\emails\\ham', 'ham'))
+
+print(data.head())
+
+vectorizer = CountVectorizer()
+counts = vectorizer.fit_transform(data['message'].values)
+
+classifier = MultinomialNB()
+targets = data['class'].values
+classifier.fit(counts, targets)
+
+examples = ['Free Viagra now!!!', "Hi Bob, how about a game of golf tomorrow?", 'All Free for you!']
+example_counts = vectorizer.transform(examples)
+predictions = classifier.predict(example_counts)
+
+print(predictions)
